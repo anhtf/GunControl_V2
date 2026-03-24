@@ -45,11 +45,18 @@ target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
 # Add sources to executable
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user sources here
+    Users/Src/databox.c
+    Users/Src/lvdt.c
+    Users/Src/proximity.c
+    Users/Src/storage.c
+    Users/Src/xylanh.c
+    Users/Src/bullet.c
 )
 
 # Add include paths
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined include paths
+    Users/Inc/
 )
 
 # Add project symbols (macros)
